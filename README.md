@@ -36,4 +36,11 @@ base/bin/java --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=
   -f mvn:org.apache.sling/org.apache.sling.adaptto.featuremodel.example/0.0.1/slingfeature/webconsole.http \
   -D felix.systempackages.calculate.uses=true -fv 5.6.10
 
+rm -rf launcher && \
+base/bin/java --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED \
+  -jar ~/.m2/repository/org/apache/sling/org.apache.sling.feature.launcher/0.1.0-SNAPSHOT/org.apache.sling.feature.launcher-0.1.0-SNAPSHOT.jar \
+  -f mvn:org.apache.sling/org.apache.sling.adaptto.featuremodel.example/0.0.1/slingfeature/webconsole.http \
+  -D felix.systempackages.calculate.uses=true \
+  -f mvn:org.apache.sling/org.apache.sling.adaptto.featuremodel.example/0.0.1/slingfeature/gogo
+
 du -h -d0 base
