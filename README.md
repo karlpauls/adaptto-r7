@@ -1,5 +1,11 @@
 # adaptto-r7
 
+## First
+
+Clone and mvn clean install the following repo: https://github.com/karlpauls/adaptto-featuremodel
+
+## Then
+
 export JAVA_HOME=$(/usr/libexec/java_home -v 10)
 
 du -h -d0 $JAVA_HOME
