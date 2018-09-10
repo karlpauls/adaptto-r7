@@ -3,6 +3,7 @@
 ## First
 
 Clone and mvn clean install the following repo: https://github.com/karlpauls/adaptto-featuremodel
+Clone and mvn clean install the following repo: https://github.com/apache/sling-org-apache-sling-feature-launcher
 
 ## Then
 
